@@ -11,8 +11,8 @@ namespace ArrayIslemleri
         static void Main(string[] args)
         {
             int[] theArray = { 32, 79, 68, 97, 60, 98, 3 };
-            int max = 0;
-            int min = 100;
+            int max = int.MinValue;
+            int min = int.MaxValue;
             int toplam = 0;
             double ortalama = 0;
             for (int i = 0; i < theArray.Length; i++)
