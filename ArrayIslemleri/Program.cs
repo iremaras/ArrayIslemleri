@@ -14,7 +14,7 @@ namespace ArrayIslemleri
             int max = 0;
             int min = 100;
             int toplam = 0;
-            int ortalama = 0;
+            double ortalama = 0;
             for (int i = 0; i < theArray.Length; i++)
             {
                 if (theArray[i] > max)
@@ -29,7 +29,9 @@ namespace ArrayIslemleri
                 toplam += theArray[i];
             }
 
-            ortalama = toplam / theArray.Length;
+            ortalama = (double)toplam / theArray.Length;
+            Console.WriteLine($"Array'de\nen büyük sayı: {max}\nen küçük sayı: {min}\nortalama: {ortalama} ");
+            Console.ReadLine();
         }
     }
 }
